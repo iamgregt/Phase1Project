@@ -1,0 +1,37 @@
+
+{
+
+    "Clients": {
+    "Company Name": "First Quality",
+    "Alert": false,
+    "Managed": ["​User onboarding, Office 365, AD, Sharepoint, Intune, Patching"],
+    "Services": {
+        "Protect": false,
+        "Recover": false,
+        "Cloud": false
+    },
+    "Support_Agreement": true,
+    "TA": {
+        "Service Desk": {
+            "Level 1": null,
+            "Level 2": null,
+            "Level 3": "Jim Russell"
+        },
+        "Infrastructure": {
+            "Systems Administrator": {
+                "Level 1": null,
+                "Level 2": "Byron Brown",
+                "Level 3": null
+            },
+            "Infrastructure Support Technician": {
+                "Level 1": null,
+                "Level 2": "Greg Taylor",
+                "Level 3": "Robert Kozare"
+            }
+        }
+    },
+    "Service_Manager": "Dan McAdams",
+    "Account_Manager": "Jennifer Seaman"
+}
+  }
+
