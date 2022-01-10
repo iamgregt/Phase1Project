@@ -91,4 +91,314 @@
             }
         ]
     }
-]}
+],
+
+    "Teams": [
+        {
+            "id": 1,
+            "abbreviation": "ATL",
+            "city": "Atlanta",
+            "conference": "East",
+            "division": "Southeast",
+            "full_name": "Atlanta Hawks",
+            "name": "Hawks",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/atlanta_hawks.png"
+        },
+        {
+            "id": 2,
+            "abbreviation": "BOS",
+            "city": "Boston",
+            "conference": "East",
+            "division": "Atlantic",
+            "full_name": "Boston Celtics",
+            "name": "Celtics",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/boston_celtics.png"
+        },
+        {
+            "id": 3,
+            "abbreviation": "BKN",
+            "city": "Brooklyn",
+            "conference": "East",
+            "division": "Atlantic",
+            "full_name": "Brooklyn Nets",
+            "name": "Nets",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/brooklyn_nets.png"
+        },
+        {
+            "id": 4,
+            "abbreviation": "CHA",
+            "city": "Charlotte",
+            "conference": "East",
+            "division": "Southeast",
+            "full_name": "Charlotte Hornets",
+            "name": "Hornets",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/charlotte_hornets.png"
+        },
+        {
+            "id": 5,
+            "abbreviation": "CHI",
+            "city": "Chicago",
+            "conference": "East",
+            "division": "Central",
+            "full_name": "Chicago Bulls",
+            "name": "Bulls",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/chicago_bulls.png"
+        },
+        {
+            "id": 6,
+            "abbreviation": "CLE",
+            "city": "Cleveland",
+            "conference": "East",
+            "division": "Central",
+            "full_name": "Cleveland Cavaliers",
+            "name": "Cavaliers",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/cleveland_cavaliers.png"
+        },
+        {
+            "id": 7,
+            "abbreviation": "DAL",
+            "city": "Dallas",
+            "conference": "West",
+            "division": "Southwest",
+            "full_name": "Dallas Mavericks",
+            "name": "Mavericks",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/charlotte_hornets.png"
+        },
+        {
+            "id": 8,
+            "abbreviation": "DEN",
+            "city": "Denver",
+            "conference": "West",
+            "division": "Northwest",
+            "full_name": "Denver Nuggets",
+            "name": "Nuggets",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/denver_nuggets.png"
+        },
+        {
+            "id": 9,
+            "abbreviation": "DET",
+            "city": "Detroit",
+            "conference": "East",
+            "division": "Central",
+            "full_name": "Detroit Pistons",
+            "name": "Pistons",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/detroit_pistons.png"
+        },
+        {
+            "id": 10,
+            "abbreviation": "GSW",
+            "city": "Golden State",
+            "conference": "West",
+            "division": "Pacific",
+            "full_name": "Golden State Warriors",
+            "name": "Warriors",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/goldenstate_warriors.png"
+        },
+        {
+            "id": 11,
+            "abbreviation": "HOU",
+            "city": "Houston",
+            "conference": "West",
+            "division": "Southwest",
+            "full_name": "Houston Rockets",
+            "name": "Rockets"
+        },
+        {
+            "id": 12,
+            "abbreviation": "IND",
+            "city": "Indiana",
+            "conference": "East",
+            "division": "Central",
+            "full_name": "Indiana Pacers",
+            "name": "Pacers",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/indiana_pacers.png"
+        },
+        {
+            "id": 13,
+            "abbreviation": "LAC",
+            "city": "LA",
+            "conference": "West",
+            "division": "Pacific",
+            "full_name": "LA Clippers",
+            "name": "Clippers",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/la_clippers.png"
+        },
+        {
+            "id": 14,
+            "abbreviation": "LAL",
+            "city": "Los Angeles",
+            "conference": "West",
+            "division": "Pacific",
+            "full_name": "Los Angeles Lakers",
+            "name": "Lakers",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/la_lakers.png"
+        },
+        {
+            "id": 15,
+            "abbreviation": "MEM",
+            "city": "Memphis",
+            "conference": "West",
+            "division": "Southwest",
+            "full_name": "Memphis Grizzlies",
+            "name": "Grizzlies",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/memphis_grizzlies.png"
+        },
+        {
+            "id": 16,
+            "abbreviation": "MIA",
+            "city": "Miami",
+            "conference": "East",
+            "division": "Southeast",
+            "full_name": "Miami Heat",
+            "name": "Heat",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/miami_heat.png"
+        },
+        {
+            "id": 17,
+            "abbreviation": "MIL",
+            "city": "Milwaukee",
+            "conference": "East",
+            "division": "Central",
+            "full_name": "Milwaukee Bucks",
+            "name": "Bucks"
+        },
+        {
+            "id": 18,
+            "abbreviation": "MIN",
+            "city": "Minnesota",
+            "conference": "West",
+            "division": "Northwest",
+            "full_name": "Minnesota Timberwolves",
+            "name": "Timberwolves",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/minnesota_timberwolves.png"
+        },
+        {
+            "id": 19,
+            "abbreviation": "NOP",
+            "city": "New Orleans",
+            "conference": "West",
+            "division": "Southwest",
+            "full_name": "New Orleans Pelicans",
+            "name": "Pelicans",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/neworleans_pelicans.png"
+        },
+        {
+            "id": 20,
+            "abbreviation": "NYK",
+            "city": "New York",
+            "conference": "East",
+            "division": "Atlantic",
+            "full_name": "New York Knicks",
+            "name": "Knicks"
+        },
+        {
+            "id": 21,
+            "abbreviation": "OKC",
+            "city": "Oklahoma City",
+            "conference": "West",
+            "division": "Northwest",
+            "full_name": "Oklahoma City Thunder",
+            "name": "Thunder",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/oklahomacity_thunder.png"
+        },
+        {
+            "id": 22,
+            "abbreviation": "ORL",
+            "city": "Orlando",
+            "conference": "East",
+            "division": "Southeast",
+            "full_name": "Orlando Magic",
+            "name": "Magic",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/orlando_magic.png"
+        },
+        {
+            "id": 23,
+            "abbreviation": "PHI",
+            "city": "Philadelphia",
+            "conference": "East",
+            "division": "Atlantic",
+            "full_name": "Philadelphia 76ers",
+            "name": "76ers",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/philadelphia_76ers.png"
+        },
+        {
+            "id": 24,
+            "abbreviation": "PHX",
+            "city": "Phoenix",
+            "conference": "West",
+            "division": "Pacific",
+            "full_name": "Phoenix Suns",
+            "name": "Suns",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/phoenix_suns.png"
+        },
+        {
+            "id": 25,
+            "abbreviation": "POR",
+            "city": "Portland",
+            "conference": "West",
+            "division": "Northwest",
+            "full_name": "Portland Trail Blazers",
+            "name": "Trail Blazers",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/portland_trailblazers.png"
+        },
+        {
+            "id": 26,
+            "abbreviation": "SAC",
+            "city": "Sacramento",
+            "conference": "West",
+            "division": "Pacific",
+            "full_name": "Sacramento Kings",
+            "name": "Kings",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/sacramento_kings.png"
+        },
+        {
+            "id": 27,
+            "abbreviation": "SAS",
+            "city": "San Antonio",
+            "conference": "West",
+            "division": "Southwest",
+            "full_name": "San Antonio Spurs",
+            "name": "Spurs",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/sanantonio_spurs.png"
+        },
+        {
+            "id": 28,
+            "abbreviation": "TOR",
+            "city": "Toronto",
+            "conference": "East",
+            "division": "Atlantic",
+            "full_name": "Toronto Raptors",
+            "name": "Raptors",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/toronto_raptors.png"
+        },
+        {
+            "id": 29,
+            "abbreviation": "UTA",
+            "city": "Utah",
+            "conference": "West",
+            "division": "Northwest",
+            "full_name": "Utah Jazz",
+            "name": "Jazz",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/utah_jazz.png"
+        },
+        {
+            "id": 30,
+            "abbreviation": "WAS",
+            "city": "Washington",
+            "conference": "East",
+            "division": "Southeast",
+            "full_name": "Washington Wizards",
+            "name": "Wizards",
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/washington_wizards.png"
+        }
+    ],
+    "meta": {
+        "total_pages": 1,
+        "current_page": 1,
+        "next_page": null,
+        "per_page": 30,
+        "total_count": 30
+    }
+}
+
+
