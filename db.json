@@ -1,0 +1,19 @@
+{ "Players": {
+    "id": 2931,
+    "first_name": "Michael",
+    "height_feet": null,
+    "height_inches": null,
+    "last_name": "Jordan",
+    "position": "",
+    "team": {
+        "id": 5,
+        "abbreviation": "CHI",
+        "city": "Chicago",
+        "conference": "East",
+        "division": "Central",
+        "full_name": "Chicago Bulls",
+        "name": "Bulls"
+    },
+    "weight_pounds": null
+}
+}

@@ -54,7 +54,7 @@ function renderStats(player){
         stats.map(stat => {
             const newLi = document.createElement('li')
             playerOne.appendChild(newLi)
-            newLi.innerHTML += stat   
+            newLi.innerHTML = stat   
         })
     })
 }
