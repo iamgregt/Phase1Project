@@ -9,6 +9,7 @@
     "position": "",
     "team": {
         "id": 5,
+        "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/chicago_bulls.png",
         "abbreviation": "CHI",
         "city": "Chicago",
         "conference": "East",

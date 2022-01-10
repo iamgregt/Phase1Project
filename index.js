@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const p1Points = document.getElementById("p1points")
     const p1Rbds = document.getElementById("p1rbds")
     const p1Bio = document.getElementById("p1Bio")
+    const playerImg = document.getElementById("playerImg")
     var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -24,8 +25,10 @@ for (i = 0; i < coll.length; i++) {
     .then(data => {
         console.log(data[0].first_name)
         let player1FullName = `${data[0].first_name} ${data[0].last_name}`
+        let teamLogo = data[0].team.logo
         playerOne.innerHTML = player1FullName
         p1Bio.innerHTML = data[0].bio
+        playerImg.src=`${teamLogo}`
 
     })
 
