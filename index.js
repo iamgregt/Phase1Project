@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const playerOne = document.getElementById("player1")
     const p1Points = document.getElementById("p1points")
     const p1Rbds = document.getElementById("p1rbds")
+    const p1Bio = document.getElementById("p1Bio")
     var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -24,6 +25,7 @@ for (i = 0; i < coll.length; i++) {
         console.log(data.data[0])
         let player1FullName = `${data.first_name} ${data.last_name}`
         playerOne.innerHTML = player1FullName
+        p1Bio.innerHTML = data.bio
 
     })
 
