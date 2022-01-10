@@ -18,9 +18,10 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-    fetch('https://www.balldontlie.io/api/v1/players/2931')
+    fetch(`http://localhost:3000/Players/?id=2931`)
     .then(resp => resp.json())
     .then(data => {
+        console.log(data.data[0])
         let player1FullName = `${data.first_name} ${data.last_name}`
         playerOne.innerHTML = player1FullName
 
@@ -44,17 +45,17 @@ function renderStats(player){
     
 
 
-    fetch(`https://www.balldontlie.io/api/v1/season_averages?season=1990&player_ids[]=${player}`)
+    fetch(`http://localhost:3000/Players/?id=${player}`)
     .then(resp => resp.json())
     .then(data => {
 
         console.log(data.data[0])
-        let stats = Object.values(data.data[0])
+        let stats = Object.entries(data.data[0])
         console.log(stats)
         stats.map(stat => {
             const newLi = document.createElement('li')
             playerOne.appendChild(newLi)
-            newLi.innerHTML = stat   
+            newLi.innerHTML = `${stat[0].replace("_", " ")}:${stat[1]}`
         })
     })
 }

@@ -14,6 +14,32 @@
         "full_name": "Chicago Bulls",
         "name": "Bulls"
     },
-    "weight_pounds": null
-}
+    "weight_pounds": null,
+        "data": [
+            {
+                "games_played": 82,
+                "player_id": 2931,
+                "season": 1990,
+                "min": "37:00",
+                "fgm": 12.07,
+                "fga": 22.4,
+                "fg3m": 0.35,
+                "fg3a": 1.13,
+                "ftm": 6.96,
+                "fta": 8.18,
+                "oreb": 1.44,
+                "dreb": 4.56,
+                "reb": 6.0,
+                "ast": 5.52,
+                "stl": 2.72,
+                "blk": 1.01,
+                "turnover": 2.46,
+                "pf": 2.79,
+                "pts": 31.46,
+                "fg_pct": 0.539,
+                "fg3_pct": 0.312,
+                "ft_pct": 0.851
+            }
+        ]
+    }
 }
