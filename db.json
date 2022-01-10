@@ -44,5 +44,51 @@
                 "ft_pct": 0.851
             }
         ]
+    },
+    {
+        "id": 237,
+        "bio": "LeBron James is an American basketball player with the Los Angeles Lakers. James first garnered national attention as the top high school basketball player in the country. With his unique combination of size, athleticism and court vision, he became a four-time NBA MVP. After leading the Miami Heat to titles in 2012 and 2013, James returned to Cleveland and helped the franchise claim its first championship in 2016.",
+        "first_name": "LeBron",
+        "height_feet": 6,
+        "height_inches": 8,
+        "last_name": "James",
+        "position": "F",
+        "team": {
+            "id": 14,
+            "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/miami_heat.png",
+            "abbreviation": "LAL",
+            "city": "Los Angeles",
+            "conference": "West",
+            "division": "Pacific",
+            "full_name": "Los Angeles Lakers",
+            "name": "Lakers"
+        },
+        "weight_pounds": 250,
+        "data": [
+            {
+                "games_played": 62,
+                "player_id": 237,
+                "season": 2011,
+                "min": "37:31",
+                "fgm": 10.02,
+                "fga": 18.85,
+                "fg3m": 0.87,
+                "fg3a": 2.4,
+                "ftm": 6.24,
+                "fta": 8.1,
+                "oreb": 1.52,
+                "dreb": 6.42,
+                "reb": 7.94,
+                "ast": 6.24,
+                "stl": 1.85,
+                "blk": 0.81,
+                "turnover": 3.44,
+                "pf": 1.55,
+                "pts": 27.15,
+                "fg_pct": 0.531,
+                "fg3_pct": 0.362,
+                "ft_pct": 0.771
+            }
+        ]
     }
 ]}
