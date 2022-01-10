@@ -1,4 +1,5 @@
-{ "Players": {
+{ "Players":[ 
+    {
     "id": 2931,
     "bio": "Michael Jeffrey Jordan (born February 17, 1963) is a former American basketball player. He is widely considered the greatest basketball player of all time. He won six championships and was the Finals MVP 6 times. He played for the Chicago Bulls and the Washington Wizards.",
     "first_name": "Michael",
@@ -43,4 +44,4 @@
             }
         ]
     }
-}
+]}

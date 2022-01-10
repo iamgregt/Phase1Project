@@ -22,10 +22,10 @@ for (i = 0; i < coll.length; i++) {
     fetch(`http://localhost:3000/Players/?id=2931`)
     .then(resp => resp.json())
     .then(data => {
-        console.log(data.data[0])
-        let player1FullName = `${data.first_name} ${data.last_name}`
+        console.log(data[0].first_name)
+        let player1FullName = `${data[0].first_name} ${data[0].last_name}`
         playerOne.innerHTML = player1FullName
-        p1Bio.innerHTML = data.bio
+        p1Bio.innerHTML = data[0].bio
 
     })
 
@@ -51,8 +51,8 @@ function renderStats(player){
     .then(resp => resp.json())
     .then(data => {
 
-        console.log(data.data[0])
-        let stats = Object.entries(data.data[0])
+        console.log(data[0].data[0])
+        let stats = Object.entries(data[0].data[0])
         console.log(stats)
         stats.map(stat => {
             const newLi = document.createElement('li')
