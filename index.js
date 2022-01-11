@@ -90,11 +90,13 @@ for (i = 0; i < coll.length; i++) {
 
 
 function renderTeam(id){
-    const playerOne = document.getElementById("player1")
 
     fetch(`http://localhost:3000/teams/${id}/players`)
     .then(resp => resp.json())
     .then(data => {
+        let playerContainerToRemove = document.getElementById('playersContainer')
+        removeAllChildNodes(playerContainerToRemove)
+
         data.forEach(player => {
             const playersContainer = document.getElementById('playersContainer')
             const playerName = document.createElement('li')
@@ -126,7 +128,7 @@ function renderTeam(id){
     })
 }
 
-function renderPlayer(player){
+function renderStats(player){
     const playerContainer = document.getElementById('playerContainer')
     playerContainer.appendChild('li').innerHTML = `${data.firstName} ${data.lastName}`
 
@@ -151,3 +153,23 @@ function renderPlayer(player){
     })
 }
 
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+
+// fetch('http://localhost:3000/Atlanta')
+// .then(resp => resp.json())
+// .then(data => {
+//     data.forEach(player => {
+//         fetch('http://localhost:3000/teams/1/players', {
+//             method: "POST",
+//             headers: {
+//                 "Accept": "application/json",
+//                 "Content-Type": "application/json"
+//             },
+//             body: JSON.stringify(player)
+//         })
+//     })
+// })
