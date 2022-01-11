@@ -159,11 +159,11 @@ function removeAllChildNodes(parent) {
     }
 }
 
-// fetch('http://localhost:3000/Atlanta')
+// fetch('http://localhost:3000/Wizards')
 // .then(resp => resp.json())
 // .then(data => {
 //     data.forEach(player => {
-//         fetch('http://localhost:3000/teams/1/players', {
+//         fetch('http://localhost:3000/teams/30/players', {
 //             method: "POST",
 //             headers: {
 //                 "Accept": "application/json",
