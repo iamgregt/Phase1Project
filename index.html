@@ -9,7 +9,7 @@
     <script src="./index.js"></script>
 </head>
 <body>
-    <form id="playerSearch">
+    <form id="teamSearch">
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Last name:</label><br>
@@ -17,24 +17,12 @@
         <button type="submit" id="searchSubmitbtn">Search Players</button>
       </form>
 <div>
-    <h2>My All-Star Team</h2>
+    <h2>Choose A Team</h2>
+    <div id="teamPics"></div>
 </div>
-<div>
+<div id="playerObj">
     <h1>Player Roster</h1>
-    <img id="playerImg" class="img"/>
-    <ol>
-        <li id="player1" class="strong"></li>
-        <p id="p1Bio"></p>
-        <button type="button" class="collapsible">View Season Averages</button>
-        <div class="content">
-            <ul id="p1Object">
-            </ul>
-        </div>
-        <li id="player2"></li>
-        <li id="player3"></li>
-        <li id="player4"></li>
-        <li id="player5"></li>
-    </ol>
+    <ol id="playersContainer"></ol>
 </div>
 
     

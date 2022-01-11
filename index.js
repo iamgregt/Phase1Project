@@ -1,12 +1,12 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    const playerOne = document.getElementById("player1")
+    const teamPics = document.getElementById('teamPics')
     const p1Points = document.getElementById("p1points")
     const p1Rbds = document.getElementById("p1rbds")
     const p1Bio = document.getElementById("p1Bio")
     const playerImg = document.getElementById("playerImg")
     const p1Head = document.getElementById("p1Head")
-    const playerSearchForm = document.getElementById('playerSearch')
+    const teamSearchForm = document.getElementById('teamSearch')
 
     var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -23,15 +23,29 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-    fetch(`http://localhost:3000/Players/?id=237`)
+    fetch(`http://localhost:3000/teams`)
     .then(resp => resp.json())
     .then(data => {
-        let player1FullName = `${data[0].first_name} ${data[0].last_name}`
-        let teamLogo = data[0].team.logo
-        let playerId = data[0].id
-        playerOne.innerHTML = player1FullName
-        p1Bio.innerHTML = data[0].bio
-        playerImg.src=`${teamLogo}`
+        console.log(data)
+        data.forEach(team => {
+        const newPicEl = document.createElement('img')
+        teamPics.appendChild(newPicEl)
+        newPicEl.src = team.logo
+        newPicEl.className = "img"
+        newPicEl.setAttribute('data-id', team.id)
+        newPicEl.addEventListener("click", e => {
+            let id = e.target.dataset.id
+            renderTeam(id)
+        })
+
+
+        })
+        // let player1FullName = `${data[0].first_name} ${data[0].last_name}`
+        // let teamLogo = data[0].team.logo
+        // let playerId = data[0].id
+        // playerOne.innerHTML = player1FullName
+        // p1Bio.innerHTML = data[0].bio
+        // playerImg.src=`${teamLogo}`
         // p1Head.setAttribute("data-id", playerId )
 
     })
@@ -46,7 +60,6 @@ for (i = 0; i < coll.length; i++) {
     //     p1Rbds.innerHTML = `Rebounds = ${rbds}`
     // })
 
-    renderStats(237)
 
     // p1Head.addEventListener('click', e =>{
     //     console.log(e)
@@ -60,7 +73,7 @@ for (i = 0; i < coll.length; i++) {
     //     e.preventDefault()
     // })
 
-    playerSearchForm.addEventListener('submit', e => {
+    teamSearchForm.addEventListener('submit', e => {
         let fname = e.target[0].value
         let lname = e.target[1].value
 
@@ -76,26 +89,46 @@ for (i = 0; i < coll.length; i++) {
 
 
 
-function renderStats(player){
-    const playerOne = document.getElementById("p1Object")
+function renderTeam(id){
+    const playerOne = document.getElementById("player1")
 
-    fetch(`http://localhost:3000/Players/?id=${player}`)
+    fetch(`http://localhost:3000/teams/${id}/players`)
     .then(resp => resp.json())
     .then(data => {
-
-        console.log(data[0].data[0])
-        let stats = Object.entries(data[0].data[0])
-        console.log(stats)
-        stats.map(stat => {
-            const newLi = document.createElement('li')
-            playerOne.appendChild(newLi)
-            newLi.innerHTML = `${stat[0].replace("_", " ")}:${stat[1]}`
+        data.forEach(player => {
+            const playersContainer = document.getElementById('playersContainer')
+            const playerName = document.createElement('li')
+            const playerCollapse = document.createElement('button')
+            const playerDiv = document.createElement('div')
+            const playerUl = document.createElement('ul')
+            playerUl.id = "playerStats"
+            playerDiv.className = "content"
+            playerCollapse.type = "button"
+            playerCollapse.className = "collapsible"
+            playerCollapse.innerHTML = "View Season Averages"
+            playerCollapse.setAttribute("data-id", player.id)
+            playerName.setAttribute("data-id", player.id)
+            playerName.className = "strong"
+            console.log(player)
+            playerName.innerHTML = `${player.firstName} ${player.lastName}`
+            playersContainer.appendChild(playerName)
+            playersContainer.appendChild(playerCollapse)
+            playersContainer.appendChild(playerDiv)
+            playerDiv.appendChild(playerUl)
+            
         })
+        // let stats = Object.entries(data[0].data[0])
+        // console.log(stats)
+        // stats.map(stat => {
+        //     const newLi = document.createElement('li')
+        //     playerOne.appendChild(newLi)
+        //     newLi.innerHTML = `${stat[0].replace("_", " ")}:${stat[1]}`
     })
 }
 
-function renderStats2(player){
-    const playerOne = document.getElementById("p1Object")
+function renderPlayer(player){
+    const playerContainer = document.getElementById('playerContainer')
+    playerContainer.appendChild('li').innerHTML = `${data.firstName} ${data.lastName}`
 
     
     console.log("hey")
