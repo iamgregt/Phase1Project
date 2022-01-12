@@ -137,7 +137,7 @@ function renderTeam(id, teamName, teamAbv){
             playerCollapse.setAttribute("data-id", player.id)
             playerName.setAttribute("data-id", player.id)
             playerName.className = "strong"
-            console.log(player)
+            // console.log(player)
             playerName.innerHTML = `${player.firstName} ${player.lastName}`
             playersContainer.appendChild(playerName)
             playersContainer.appendChild(playerCollapse)
@@ -203,14 +203,24 @@ function removeAllChildNodes(parent) {
 function getgame(teamAbv) {fetch('https://data.nba.net/10s/prod/v1/20220110/scoreboard.json')
 .then(resp => resp.json())
 .then(data => {
-    if(data.games[0].hTeam.triCode === teamAbv){
-    let hTeam = parseInt(data.games[0].hTeam.score)
-    let vTeam = parseInt(data.games[0].vTeam.score)
-    console.log(hTeam)
-    if(hTeam > vTeam) {
-    console.log(`Horray! ${data.games[0].hTeam.triCode} beat ${data.games[0].vTeam.triCode}`)
+    console.log(data)
+    const game = data.games.find(game => game.hTeam.triCode === teamAbv)
+    if(game){
+        let home = parseInt(game.hTeam.score)
+        let away = parseInt(game.vTeam.score)
+        checkScore(home, away)
     }else{
-        console.log("boo")
+        console.log('did not play')
     }
-}}
-)}
+
+    })
+}
+
+function checkScore(home, away){
+    if(home > away){
+        console.log("success")
+    }
+    else{
+        console.log("fail")
+    }
+}
