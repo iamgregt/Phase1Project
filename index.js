@@ -196,3 +196,17 @@ function removeAllChildNodes(parent) {
 //         })
 //     })
 // })
+
+function getgame() {fetch('https://data.nba.net/10s/prod/v1/20220110/scoreboard.json')
+.then(resp => resp.json())
+.then(data => {
+    let hTeam = parseInt(data.games[0].hTeam.score)
+    let vTeam = parseInt(data.games[0].vTeam.score)
+    console.log(hTeam)
+    if(hTeam > vTeam) {
+    console.log(`Horray! ${data.games[0].hTeam.triCode} beat ${data.games[0].vTeam.triCode}`)
+    }else{
+        console.log("boo")
+    }
+}
+)}
