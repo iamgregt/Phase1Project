@@ -98,15 +98,18 @@ function renderTeam(id){
     })
     .then(resp => resp.json())
     .then(data => {
+        let ytVid2 = document.getElementById('iframe2')
         let videoId = data.items[0].id.videoId
-        window.open(`https://www.youtube.com/watch?v=${videoId}`)
+        ytVid2.src = `https://www.youtube.com/embed/${videoId}`
+        ytVid2.setAttribute('frameborder', '0')
+
 
     })
 
     fetch(`http://localhost:3000/teams/${id}/players`)
     .then(resp => resp.json())
     .then(data => {
-        const ytPlayer = document.getElementById('iframe')
+        const ytPlayer = document.getElementById('iframe1')
         ytPlayer.src = "https://www.youtube.com/embed/qEs4T-aErkc?autoplay=1"
         ytPlayer.setAttribute('origin', "http://localhost/")
         ytPlayer.setAttribute('frameborder', '0')
