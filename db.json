@@ -140,7 +140,8 @@
       "division": "Pacific",
       "full_name": "LA Clippers",
       "name": "Clippers",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/la_clippers.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/la_clippers.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/la_clippers.png"
     },
     {
       "id": 14,
@@ -227,7 +228,8 @@
       "division": "Northwest",
       "full_name": "Oklahoma City Thunder",
       "name": "Thunder",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/oklahomacity_thunder.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/oklahomacity_thunder.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/oklahomacity_thunder.png"
     },
     {
       "id": 22,

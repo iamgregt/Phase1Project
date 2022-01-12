@@ -31,7 +31,7 @@ for (i = 0; i < coll.length; i++) {
         data.forEach(team => {
         const newPicEl = document.createElement('img')
         teamPics.appendChild(newPicEl)
-        newPicEl.src = team.logo
+        newPicEl.src = team.myLogo
         newPicEl.className = "img"
         newPicEl.setAttribute('data-id', team.id)
         newPicEl.setAttribute('data-name', team.full_name)
