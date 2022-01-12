@@ -58,6 +58,56 @@ td {
 img { 
 	border: none;
 	max-width: 6.5%;
+	animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
 }
 	/* removes outlines from linked images (for older browsers and IE), sets up images for responsive design layout */
 	
@@ -130,4 +180,18 @@ strong {
 	display: none;
 	overflow: hidden;
 	background-color: #f1f1f1;
+  }
+
+  #iframe {
+	  width: 20%;
+	  height: 20%;
+	  display: inline-block;
+  }
+
+  #roster {
+	  display: inline-block
+  }
+
+  #playerObj {
+	  white-space: nowrap;
   }

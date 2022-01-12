@@ -90,10 +90,26 @@ for (i = 0; i < coll.length; i++) {
 
 
 function renderTeam(id){
+    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCiWLfSweyRNmLpgEHekhoAg&q=chicago%20bulls&key=AIzaSyCusVHUTXpJiDroRQXsot5Qjf1GMNtC73o`, {
+        method: "GET",
+        header: {
+            "Accept": "application/json"  
+     }
+    })
+    .then(resp => resp.json())
+    .then(data => {
+        let videoId = data.items[0].id.videoId
+        window.open(`https://www.youtube.com/watch?v=${videoId}`)
+
+    })
 
     fetch(`http://localhost:3000/teams/${id}/players`)
     .then(resp => resp.json())
     .then(data => {
+        const ytPlayer = document.getElementById('iframe')
+        ytPlayer.src = "https://www.youtube.com/embed/qEs4T-aErkc?autoplay=1"
+        ytPlayer.setAttribute('origin', "http://localhost/")
+        ytPlayer.setAttribute('frameborder', '0')
         let playerContainerToRemove = document.getElementById('playersContainer')
         removeAllChildNodes(playerContainerToRemove)
 

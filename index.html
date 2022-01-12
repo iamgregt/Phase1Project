@@ -9,22 +9,23 @@
     <script src="./index.js"></script>
 </head>
 <body>
-    <form id="teamSearch">
+<div>
+    <h2>Choose A Team</h2>
+    <div id="teamPics"></div>
+</div>
+<div id="playerObj">
+     <form id="teamSearch">
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname">
         <button type="submit" id="searchSubmitbtn">Search Players</button>
       </form>
-<div>
-    <h2>Choose A Team</h2>
-    <div id="teamPics"></div>
-</div>
-<div id="playerObj">
-    <h1>Player Roster</h1>
+    <h1 id="roster">Player Roster</h1>
+    <iframe id="iframe" type="text/html" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
     <ol id="playersContainer"></ol>
 </div>
-
-    
 </body>
 </html>
