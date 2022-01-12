@@ -34,10 +34,12 @@ for (i = 0; i < coll.length; i++) {
         newPicEl.className = "img"
         newPicEl.setAttribute('data-id', team.id)
         newPicEl.setAttribute('data-name', team.full_name)
+        newPicEl.setAttribute('data-abv', team.abbreviation)
         newPicEl.addEventListener("click", e => {
             let id = e.target.dataset.id
             let teamName = e.target.dataset.name
-            renderTeam(id, teamName)
+            let teamAbv = e.target.dataset.abv
+            renderTeam(id, teamName, teamAbv)
         })
 
 
@@ -91,7 +93,8 @@ for (i = 0; i < coll.length; i++) {
 
 
 
-function renderTeam(id, teamName){
+function renderTeam(id, teamName, teamAbv){
+    getgame(teamAbv)
     let searchTerm = encodeURIComponent(teamName)
     console.log(searchTerm)
     fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCiWLfSweyRNmLpgEHekhoAg&q=${searchTerm}&key=AIzaSyCusVHUTXpJiDroRQXsot5Qjf1GMNtC73o`, {
@@ -197,9 +200,10 @@ function removeAllChildNodes(parent) {
 //     })
 // })
 
-function getgame() {fetch('https://data.nba.net/10s/prod/v1/20220110/scoreboard.json')
+function getgame(teamAbv) {fetch('https://data.nba.net/10s/prod/v1/20220110/scoreboard.json')
 .then(resp => resp.json())
 .then(data => {
+    if(data.games[0].hTeam.triCode === teamAbv){
     let hTeam = parseInt(data.games[0].hTeam.score)
     let vTeam = parseInt(data.games[0].vTeam.score)
     console.log(hTeam)
@@ -208,5 +212,5 @@ function getgame() {fetch('https://data.nba.net/10s/prod/v1/20220110/scoreboard.
     }else{
         console.log("boo")
     }
-}
+}}
 )}
