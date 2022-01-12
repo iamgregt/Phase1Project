@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const playerImg = document.getElementById("playerImg")
     const p1Head = document.getElementById("p1Head")
     const teamSearchForm = document.getElementById('teamSearch')
+    const scoreBoard = document.getElementById('score')
 
     var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -203,24 +204,30 @@ function removeAllChildNodes(parent) {
 function getgame(teamAbv) {fetch('https://data.nba.net/10s/prod/v1/20220110/scoreboard.json')
 .then(resp => resp.json())
 .then(data => {
+    let scoreBoard = document.getElementById('score')
     console.log(data)
-    const game = data.games.find(game => game.hTeam.triCode === teamAbv)
+    let game = data.games.find(game => game.hTeam.triCode === teamAbv || game.vTeam.triCode === teamAbv)
+    console.log(game)
     if(game){
         let home = parseInt(game.hTeam.score)
         let away = parseInt(game.vTeam.score)
-        checkScore(home, away)
+        let homeName = game.hTeam.triCode
+        let awayName = game.vTeam.triCode
+        checkScore(home, away, homeName, awayName)
     }else{
-        console.log('did not play')
+        scoreBoard.innerHTML = "Did Not Play"
     }
 
     })
 }
 
-function checkScore(home, away){
+function checkScore(home, away, homeName, awayName){
+    let scoreBoard = document.getElementById('score')
     if(home > away){
-        console.log("success")
+        scoreBoard.innerHTML = `${homeName} won against ${awayName}`
+
     }
     else{
-        console.log("fail")
+        scoreBoard.innerHTML = `${homeName} lost to ${awayName}`
     }
 }
