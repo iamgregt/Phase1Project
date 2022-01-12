@@ -8,7 +8,8 @@
       "division": "Southeast",
       "full_name": "Atlanta Hawks",
       "name": "Hawks",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/atlanta_hawks.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/atlanta_hawks.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/atlanta_hawks.png"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "division": "Atlantic",
       "full_name": "Boston Celtics",
       "name": "Celtics",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/boston_celtics.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/boston_celtics.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/boston_celtics.png"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "division": "Atlantic",
       "full_name": "Brooklyn Nets",
       "name": "Nets",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/brooklyn_nets.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/brooklyn_nets.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/brooklyn_nets.png"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "division": "Southeast",
       "full_name": "Charlotte Hornets",
       "name": "Hornets",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/charlotte_hornets.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/charlotte_hornets.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/charlotte_hornets.png"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "division": "Central",
       "full_name": "Chicago Bulls",
       "name": "Bulls",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/chicago_bulls.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/chicago_bulls.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/chicago_bulls.png"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "division": "Central",
       "full_name": "Cleveland Cavaliers",
       "name": "Cavaliers",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/cleveland_cavaliers.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/cleveland_cavaliers.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/cleveland_cavaliers.png"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "division": "Southwest",
       "full_name": "Dallas Mavericks",
       "name": "Mavericks",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/dallas_mavericks.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/dallas_mavericks.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/dallas_mavericks_png"
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "division": "Northwest",
       "full_name": "Denver Nuggets",
       "name": "Nuggets",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/denver_nuggets.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/denver_nuggets.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/denver_nuggets.png"
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "division": "Central",
       "full_name": "Detroit Pistons",
       "name": "Pistons",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/detroit_pistons.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/detroit_pistons.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/detroit_pistons.png"
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "division": "Pacific",
       "full_name": "Golden State Warriors",
       "name": "Warriors",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/goldenstate_warriors.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/goldenstate_warriors.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/goldenstate_warriors.png"
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "division": "Southwest",
       "full_name": "Houston Rockets",
       "name": "Rockets",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/houston_rockets.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/houston_rockets.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/houston_rockets.png"
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "division": "Central",
       "full_name": "Indiana Pacers",
       "name": "Pacers",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/indiana_pacers.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/indiana_pacers.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/indiana_pacers.png"
     },
     {
       "id": 13,
@@ -138,7 +150,8 @@
       "division": "Pacific",
       "full_name": "Los Angeles Lakers",
       "name": "Lakers",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/la_lakers.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/la_lakers.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/la_lakers.png"
     },
     {
       "id": 15,
@@ -148,7 +161,8 @@
       "division": "Southwest",
       "full_name": "Memphis Grizzlies",
       "name": "Grizzlies",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/memphis_grizzlies.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/memphis_grizzlies.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/memphis_grizzlies.png"
     },
     {
       "id": 16,
@@ -158,7 +172,8 @@
       "division": "Southeast",
       "full_name": "Miami Heat",
       "name": "Heat",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/miami_heat.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/miami_heat.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/miami_heat.png"
     },
     {
       "id": 17,
@@ -168,7 +183,8 @@
       "division": "Central",
       "full_name": "Milwaukee Bucks",
       "name": "Bucks",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/milwaukee_bucks.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/milwaukee_bucks.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/milwaukee_bucks.png"
     },
     {
       "id": 18,
@@ -178,7 +194,8 @@
       "division": "Northwest",
       "full_name": "Minnesota Timberwolves",
       "name": "Timberwolves",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/minnesota_timberwolves.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/minnesota_timberwolves.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/minnesota_timberwolves.png"
     },
     {
       "id": 19,
@@ -188,7 +205,8 @@
       "division": "Southwest",
       "full_name": "New Orleans Pelicans",
       "name": "Pelicans",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/neworleans_pelicans.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/neworleans_pelicans.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/neworleans_pelicans.png"
     },
     {
       "id": 20,
@@ -198,7 +216,8 @@
       "division": "Atlantic",
       "full_name": "New York Knicks",
       "name": "Knicks",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/newyork_knicks.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/newyork_knicks.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/newyork_knicks.png"
     },
     {
       "id": 21,
@@ -218,7 +237,8 @@
       "division": "Southeast",
       "full_name": "Orlando Magic",
       "name": "Magic",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/orlando_magic.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/orlando_magic.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/orlando_magic.png"
     },
     {
       "id": 23,
@@ -228,7 +248,8 @@
       "division": "Atlantic",
       "full_name": "Philadelphia 76ers",
       "name": "76ers",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/philadelphia_76ers.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/philadelphia_76ers.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/philadelphia_76ers.png"
     },
     {
       "id": 24,
@@ -238,7 +259,8 @@
       "division": "Pacific",
       "full_name": "Phoenix Suns",
       "name": "Suns",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/phoenix_suns.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/phoenix_suns.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/phoenix_suns.png"
     },
     {
       "id": 25,
@@ -248,7 +270,8 @@
       "division": "Northwest",
       "full_name": "Portland Trail Blazers",
       "name": "Trail Blazers",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/portland_trailblazers.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/portland_trailblazers.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/portland_trailblazers.png"
     },
     {
       "id": 26,
@@ -258,7 +281,8 @@
       "division": "Pacific",
       "full_name": "Sacramento Kings",
       "name": "Kings",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/sacramento_kings.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/sacramento_kings.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/sacramento_kings.png"
     },
     {
       "id": 27,
@@ -268,7 +292,8 @@
       "division": "Southwest",
       "full_name": "San Antonio Spurs",
       "name": "Spurs",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/sanantonio_spurs.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/sanantonio_spurs.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/sanantonio_spurs.png"
     },
     {
       "id": 28,
@@ -278,7 +303,8 @@
       "division": "Atlantic",
       "full_name": "Toronto Raptors",
       "name": "Raptors",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/toronto_raptors.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/toronto_raptors.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/toronto_raptors.png"
     },
     {
       "id": 29,
@@ -288,7 +314,8 @@
       "division": "Northwest",
       "full_name": "Utah Jazz",
       "name": "Jazz",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/utah_jazz.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/utah_jazz.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/utah_jazz.png"
     },
     {
       "id": 30,
@@ -298,7 +325,8 @@
       "division": "Southeast",
       "full_name": "Washington Wizards",
       "name": "Wizards",
-      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/washington_wizards.png"
+      "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/washington_wizards.png",
+      "myLogo": "/Users/greg/Pictures/NBATeams/washington_wizards.png"
     }
   ],
   "players": [
