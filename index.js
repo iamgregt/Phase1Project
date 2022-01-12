@@ -33,9 +33,11 @@ for (i = 0; i < coll.length; i++) {
         newPicEl.src = team.logo
         newPicEl.className = "img"
         newPicEl.setAttribute('data-id', team.id)
+        newPicEl.setAttribute('data-name', team.full_name)
         newPicEl.addEventListener("click", e => {
             let id = e.target.dataset.id
-            renderTeam(id)
+            let teamName = e.target.dataset.name
+            renderTeam(id, teamName)
         })
 
 
@@ -89,8 +91,10 @@ for (i = 0; i < coll.length; i++) {
 
 
 
-function renderTeam(id){
-    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCiWLfSweyRNmLpgEHekhoAg&q=chicago%20bulls&key=AIzaSyCusVHUTXpJiDroRQXsot5Qjf1GMNtC73o`, {
+function renderTeam(id, teamName){
+    let searchTerm = encodeURIComponent(teamName)
+    console.log(searchTerm)
+    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCiWLfSweyRNmLpgEHekhoAg&q=${searchTerm}&key=AIzaSyCusVHUTXpJiDroRQXsot5Qjf1GMNtC73o`, {
         method: "GET",
         header: {
             "Accept": "application/json"  
