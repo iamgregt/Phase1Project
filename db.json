@@ -9,7 +9,8 @@
       "full_name": "Atlanta Hawks",
       "name": "Hawks",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/atlanta_hawks.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/atlanta_hawks.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/atlanta_hawks.png",
+      "teamId": "1610612737"
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "full_name": "Boston Celtics",
       "name": "Celtics",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/boston_celtics.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/boston_celtics.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/boston_celtics.png",
+      "teamId": "1610612738"
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "full_name": "Brooklyn Nets",
       "name": "Nets",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/brooklyn_nets.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/brooklyn_nets.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/brooklyn_nets.png",
+      "teamId": "1610612751"
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
       "full_name": "Charlotte Hornets",
       "name": "Hornets",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/charlotte_hornets.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/charlotte_hornets.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/charlotte_hornets.png",
+      "teamId": "1610612766"
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
       "full_name": "Chicago Bulls",
       "name": "Bulls",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/chicago_bulls.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/chicago_bulls.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/chicago_bulls.png",
+      "teamId": "1610612741"
     },
     {
       "id": 6,
@@ -64,7 +69,8 @@
       "full_name": "Cleveland Cavaliers",
       "name": "Cavaliers",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/cleveland_cavaliers.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/cleveland_cavaliers.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/cleveland_cavaliers.png",
+      "teamId": "1610612739"
     },
     {
       "id": 7,
@@ -75,7 +81,8 @@
       "full_name": "Dallas Mavericks",
       "name": "Mavericks",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/dallas_mavericks.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/dallas_mavericks.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/dallas_mavericks.png",
+      "teamId": "1610612742"
     },
     {
       "id": 8,
@@ -86,7 +93,8 @@
       "full_name": "Denver Nuggets",
       "name": "Nuggets",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/denver_nuggets.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/denver_nuggets.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/denver_nuggets.png",
+      "teamId": "1610612743"
     },
     {
       "id": 9,
@@ -97,7 +105,8 @@
       "full_name": "Detroit Pistons",
       "name": "Pistons",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/detroit_pistons.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/detroit_pistons.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/detroit_pistons.png",
+      "teamId": "1610612765"
     },
     {
       "id": 10,
@@ -108,7 +117,8 @@
       "full_name": "Golden State Warriors",
       "name": "Warriors",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/goldenstate_warriors.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/goldenstate_warriors.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/goldenstate_warriors.png",
+      "teamId": "1610612744"
     },
     {
       "id": 11,
@@ -119,7 +129,8 @@
       "full_name": "Houston Rockets",
       "name": "Rockets",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/houston_rockets.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/houston_rockets.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/houston_rockets.png",
+      "teamId": "1610612745"
     },
     {
       "id": 12,
@@ -130,7 +141,8 @@
       "full_name": "Indiana Pacers",
       "name": "Pacers",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/indiana_pacers.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/indiana_pacers.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/indiana_pacers.png",
+      "teamId": "1610612754"
     },
     {
       "id": 13,
@@ -141,7 +153,8 @@
       "full_name": "LA Clippers",
       "name": "Clippers",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/la_clippers.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/la_clippers.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/la_clippers.png",
+      "teamId": "1610612746"
     },
     {
       "id": 14,
@@ -152,7 +165,8 @@
       "full_name": "Los Angeles Lakers",
       "name": "Lakers",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/la_lakers.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/la_lakers.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/la_lakers.png",
+      "teamId": "1610612747"
     },
     {
       "id": 15,
@@ -163,7 +177,8 @@
       "full_name": "Memphis Grizzlies",
       "name": "Grizzlies",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/memphis_grizzlies.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/memphis_grizzlies.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/memphis_grizzlies.png",
+      "teamId": "1610612763"
     },
     {
       "id": 16,
@@ -174,7 +189,8 @@
       "full_name": "Miami Heat",
       "name": "Heat",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/miami_heat.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/miami_heat.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/miami_heat.png",
+      "teamId": "1610612748"
     },
     {
       "id": 17,
@@ -185,7 +201,8 @@
       "full_name": "Milwaukee Bucks",
       "name": "Bucks",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/milwaukee_bucks.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/milwaukee_bucks.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/milwaukee_bucks.png",
+      "teamId": "1610612749"
     },
     {
       "id": 18,
@@ -196,7 +213,8 @@
       "full_name": "Minnesota Timberwolves",
       "name": "Timberwolves",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/minnesota_timberwolves.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/minnesota_timberwolves.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/minnesota_timberwolves.png",
+      "teamId": "1610612750"
     },
     {
       "id": 19,
@@ -207,7 +225,8 @@
       "full_name": "New Orleans Pelicans",
       "name": "Pelicans",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/neworleans_pelicans.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/neworleans_pelicans.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/neworleans_pelicans.png",
+      "teamId": "1610612740"
     },
     {
       "id": 20,
@@ -218,7 +237,8 @@
       "full_name": "New York Knicks",
       "name": "Knicks",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/newyork_knicks.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/newyork_knicks.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/newyork_knicks.png",
+      "teamId": "1610612752"
     },
     {
       "id": 21,
@@ -229,7 +249,8 @@
       "full_name": "Oklahoma City Thunder",
       "name": "Thunder",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/oklahomacity_thunder.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/oklahomacity_thunder.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/oklahomacity_thunder.png",
+      "teamId": "1610612760"
     },
     {
       "id": 22,
@@ -240,7 +261,8 @@
       "full_name": "Orlando Magic",
       "name": "Magic",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/orlando_magic.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/orlando_magic.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/orlando_magic.png",
+      "teamId": "1610612753"
     },
     {
       "id": 23,
@@ -251,7 +273,8 @@
       "full_name": "Philadelphia 76ers",
       "name": "76ers",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/philadelphia_76ers.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/philadelphia_76ers.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/philadelphia_76ers.png",
+      "teamId": "1610612755"
     },
     {
       "id": 24,
@@ -262,7 +285,8 @@
       "full_name": "Phoenix Suns",
       "name": "Suns",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/phoenix_suns.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/phoenix_suns.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/phoenix_suns.png",
+      "teamId": "1610612756"
     },
     {
       "id": 25,
@@ -273,7 +297,8 @@
       "full_name": "Portland Trail Blazers",
       "name": "Trail Blazers",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/portland_trailblazers.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/portland_trailblazers.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/portland_trailblazers.png",
+      "teamId": "1610612757"
     },
     {
       "id": 26,
@@ -284,7 +309,8 @@
       "full_name": "Sacramento Kings",
       "name": "Kings",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/sacramento_kings.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/sacramento_kings.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/sacramento_kings.png",
+      "teamId": "1610612758"
     },
     {
       "id": 27,
@@ -295,7 +321,8 @@
       "full_name": "San Antonio Spurs",
       "name": "Spurs",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/sanantonio_spurs.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/sanantonio_spurs.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/sanantonio_spurs.png",
+      "teamId": "1610612759"
     },
     {
       "id": 28,
@@ -306,7 +333,8 @@
       "full_name": "Toronto Raptors",
       "name": "Raptors",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/toronto_raptors.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/toronto_raptors.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/toronto_raptors.png",
+      "teamId": "1610612761"
     },
     {
       "id": 29,
@@ -317,7 +345,8 @@
       "full_name": "Utah Jazz",
       "name": "Jazz",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/utah_jazz.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/utah_jazz.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/utah_jazz.png",
+      "teamId": "1610612762"
     },
     {
       "id": 30,
@@ -328,7 +357,8 @@
       "full_name": "Washington Wizards",
       "name": "Wizards",
       "logo": "https://myphase1project.s3.us-east-2.amazonaws.com/NBATeams/washington_wizards.png",
-      "myLogo": "/Users/greg/Pictures/NBATeams/washington_wizards.png"
+      "myLogo": "/Users/greg/Pictures/NBATeams/washington_wizards.png",
+      "teamId": "1610612764"
     }
   ],
   "players": [
