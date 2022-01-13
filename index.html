@@ -14,31 +14,32 @@
     <div id="teamPics"></div>
 </div>
 <div id="playerObj">
-     <form id="teamSearch">
+
+</div>
+<iframe id="iframe1" type="text/html" class="iframe"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+<iframe id="iframe2" type="text/html" class="iframe"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+<div id="teamInfo">
+    <p id="score"></p>
+</div>
+<div id="searchForm">
+    <form id="teamSearch">
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname">
         <button type="submit" id="searchSubmitbtn">Search Players</button>
       </form>
+</div>
+<div>
+<select id="playerScroll" size="10"></select>
     <h1 id="roster">Player Roster</h1>
-    <p id="score"></p>
-    <select size="5">
-        <!-- <option value="1">Item #1</option>
-        <option value="2">Item #2</option>
-        <option value="3">Item #3</option>
-        <option value="4">Item #4</option>
-        <option value="5">Item #5</option>
-        <option value="6">Item #6</option>
-        <option value="7">Item #7</option> -->
-    </select>
-    <iframe id="iframe1" type="text/html" class="iframe"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
-    <iframe id="iframe2" type="text/html" class="iframe"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
     <ol id="playersContainer"></ol>
 </div>
+
+
 </body>
 </html>

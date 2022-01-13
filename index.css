@@ -2,9 +2,12 @@
 	box-sizing: border-box;
 }
 html, body {
-	min-height: 100%;
+	margin: 0;
+	height: 100%;
 	background: #fff;
 	color: #000;
+	padding-top: 0px;
+	padding-left: 4px;
 }
 	/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
 	
@@ -19,7 +22,7 @@ body, ul, ol, dl {
 }
 article, aside, audio, 
 footer, header, nav, section, video {
-	display: block; 
+	display: block;
 	}
 	
 	/* ensures that older browsers will display HTML5 elements correctly */
@@ -182,16 +185,17 @@ strong {
 	background-color: #f1f1f1;
   }
 
-  .iframe {
-	  width: 20%;
-	  height: 20%;
-	  display: inline-block;
+iframe {
+	height: 30%;
+	width: auto;
+}
+
+.teamInfo {
+	padding-left: "300";
+}
+#playerScroll {
+	  width: fit-content;
+	  height: fit-content;
+	 margin-top: 20px;
   }
 
-  #roster {
-	  display: inline-block
-  }
-
-  #playerObj {
-	  white-space: nowrap;
-  }

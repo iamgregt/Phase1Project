@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     const teamPics = document.getElementById('teamPics')
     const p1Points = document.getElementById("p1points")
@@ -8,14 +7,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const p1Head = document.getElementById("p1Head")
     const teamSearchForm = document.getElementById('teamSearch')
     const scoreBoard = document.getElementById('score')
+    const playerScroll = document.getElementById('playerScroll')
+    const teamVids = document.querySelectorAll('.iframe')
+    playerScroll.hidden = true
+    teamVids.forEach(vid => {
+        vid.hidden = true
+    })
 
-    var coll = document.getElementsByClassName("collapsible");
-var i;
+    let coll = document.getElementsByClassName("collapsible");
+let i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
+    let content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {
@@ -41,6 +46,10 @@ for (i = 0; i < coll.length; i++) {
             let teamName = e.target.dataset.name
             let teamAbv = e.target.dataset.abv
             renderTeam(id, teamName, teamAbv)
+            teamVids.forEach( vid => {
+                vid.hidden = false
+            })
+            
         })
 
 
@@ -97,8 +106,10 @@ for (i = 0; i < coll.length; i++) {
 function renderTeam(id, teamName, teamAbv){
     getgame(teamAbv)
     let searchTerm = encodeURIComponent(teamName)
+    let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCiWLfSweyRNmLpgEHekhoAg&q=${searchTerm}&key=AIzaSyCusVHUTXpJiDroRQXsot5Qjf1GMNtC73o`
+    let testUrl = "http://localhost:3000/teams"
     console.log(searchTerm)
-    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCiWLfSweyRNmLpgEHekhoAg&q=${searchTerm}&key=AIzaSyCusVHUTXpJiDroRQXsot5Qjf1GMNtC73o`, {
+    fetch(`${testUrl}`, {
         method: "GET",
         header: {
             "Accept": "application/json"  
@@ -107,8 +118,10 @@ function renderTeam(id, teamName, teamAbv){
     .then(resp => resp.json())
     .then(data => {
         let ytVid2 = document.getElementById('iframe2')
-        let videoId = data.items[0].id.videoId
-        ytVid2.src = `https://www.youtube.com/embed/${videoId}`
+        // let videoId = data.items[0].id.videoId
+        // let vidSrc = `https://www.youtube.com/embed/${videoId}`
+        let testSrc = "https://www.youtube.com/embed/qEs4T-aErkc"
+        ytVid2.src = testSrc
         ytVid2.setAttribute('frameborder', '0')
 
 
@@ -117,19 +130,29 @@ function renderTeam(id, teamName, teamAbv){
     fetch(`http://localhost:3000/teams/${id}/players`)
     .then(resp => resp.json())
     .then(data => {
+
+        playerScroll.hidden = false
         const ytPlayer = document.getElementById('iframe1')
-        ytPlayer.src = "https://www.youtube.com/embed/qEs4T-aErkc?autoplay=1"
+        let ytUrl = "https://www.youtube.com/embed/qEs4T-aErkc?autoplay=1"
+        ytPlayer.src = ytUrl
         ytPlayer.setAttribute('origin', "http://localhost/")
         ytPlayer.setAttribute('frameborder', '0')
         let playerContainerToRemove = document.getElementById('playersContainer')
         removeAllChildNodes(playerContainerToRemove)
+        removeAllChildNodes(playerScroll)
 
         data.forEach(player => {
+            const playerFullName = `${player.firstName} ${player.lastName}`
+
             const playersContainer = document.getElementById('playersContainer')
             const playerName = document.createElement('li')
             const playerCollapse = document.createElement('button')
             const playerDiv = document.createElement('div')
             const playerUl = document.createElement('ul')
+            const playerOption = document.createElement('option')
+
+            playerScroll.appendChild(playerOption)
+            playerOption.innerHTML = playerFullName
             playerUl.id = "playerStats"
             playerDiv.className = "content"
             playerCollapse.type = "button"
@@ -139,7 +162,7 @@ function renderTeam(id, teamName, teamAbv){
             playerName.setAttribute("data-id", player.id)
             playerName.className = "strong"
             // console.log(player)
-            playerName.innerHTML = `${player.firstName} ${player.lastName}`
+            playerName.innerHTML = playerFullName
             playersContainer.appendChild(playerName)
             playersContainer.appendChild(playerCollapse)
             playersContainer.appendChild(playerDiv)
