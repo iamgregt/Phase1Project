@@ -60,7 +60,7 @@ td {
 	
 img { 
 	border: none;
-	max-width: 6.5%;
+	max-width: 10%;
 	animation: fadeIn ease 5s;
   -webkit-animation: fadeIn ease 5s;
   -moz-animation: fadeIn ease 5s;
@@ -186,7 +186,7 @@ strong {
   }
 
 iframe {
-	height: 30%;
+	height: 300px;
 	width: auto;
 }
 
@@ -196,6 +196,18 @@ iframe {
 #playerScroll {
 	  width: fit-content;
 	  height: fit-content;
-	 margin-top: 20px;
+	  margin-bottom: 10px;
   }
 
+.players {
+	font-size: 24px;
+}
+
+div {
+	max-height: 100%;
+}
+
+/* .newsLogo {
+	width: auto;
+	height: 180px;
+} */
