@@ -253,9 +253,9 @@ function getgame(teamAbv) {
         let away = parseInt(game.vTeam.score)
         let homeName = game.hTeam.triCode
         let awayName = game.vTeam.triCode
-        let awayId =
-        // team2Header.src = "test"
-        checkScore(home, away, homeName, awayName)
+        let awayId = game.vTeam.teamId
+        let homeId = game.hTeam.teamId
+        checkScore(home, away, homeName, awayName, awayId, homeId)
     }else{
         scoreBoard.innerHTML = "Did Not Play"
     }
@@ -263,8 +263,8 @@ function getgame(teamAbv) {
     })
 }
 
-function checkScore(home, away, homeName, awayName){
-    getAwayTeam()
+function checkScore(home, away, homeName, awayName, awayId, homeId){
+    getAwayTeam(awayId, homeId)
     let scoreBoard = document.getElementById('score')
     if(home > away){
         scoreBoard.innerHTML = `${homeName} won against ${awayName}`
@@ -275,12 +275,15 @@ function checkScore(home, away, homeName, awayName){
     }
 }
 
-function getAwayTeam(){
-    fetch('http://localhost:3000/teams/')
+function getAwayTeam(awayId, homeId){
+    const team2Header = document.getElementById('newsLogo2')
+    fetch(`http://localhost:3000/teams/`)
     .then(resp => resp.json()
     .then(data => {
-        data.forEach(team => {
-            console.log(`${team.id} - ${team.abbreviation}`)
+        data.map(team => {
+            if(team.teamId === awayId){
+                team2Header.src = team.myLogo
+            }
         })
     }))
 }

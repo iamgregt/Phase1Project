@@ -196,7 +196,8 @@ iframe {
 #playerScroll {
 	  width: fit-content;
 	  height: fit-content;
-	  margin-bottom: 10px;
+	  margin-top: 5px;
+	  margin-left: 10px;
   }
 
 .players {
@@ -207,7 +208,6 @@ div {
 	max-height: 100%;
 }
 
-/* .newsLogo {
-	width: auto;
-	height: 180px;
-} */
+#newsHeader {
+	display: flex;
+}
