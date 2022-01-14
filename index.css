@@ -211,3 +211,9 @@ div {
 #newsHeader {
 	display: flex;
 }
+
+#score {
+border: 15px solid;
+border-image: url(/Users/greg/Pictures/scoreboard.jpeg) 30 / 15px / 0px stretch;
+display: block;
+}

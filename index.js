@@ -248,7 +248,8 @@ function getgame(teamAbv) {
     console.log(data)
     let game = data.games.find(game => game.hTeam.triCode === teamAbv || game.vTeam.triCode === teamAbv)
     console.log(game)
-    if(game){
+    try{
+    if(teamAbv === game.hTeam.triCode){
         let home = parseInt(game.hTeam.score)
         let away = parseInt(game.vTeam.score)
         let homeName = game.hTeam.triCode
@@ -256,7 +257,19 @@ function getgame(teamAbv) {
         let awayId = game.vTeam.teamId
         let homeId = game.hTeam.teamId
         checkScore(home, away, homeName, awayName, awayId, homeId)
+    }else if(teamAbv === game.vTeam.triCode){
+        let away = parseInt(game.hTeam.score)
+        let home = parseInt(game.vTeam.score)
+        let awayName = game.hTeam.triCode
+        let homeName = game.vTeam.triCode
+        let homeId = game.vTeam.teamId
+        let awayId = game.hTeam.teamId
+        checkScore(home, away, homeName, awayName, awayId, homeId)
     }else{
+        console.log(data)
+        scoreBoard.innerHTML = "Did Not Play"
+
+    }}catch{
         scoreBoard.innerHTML = "Did Not Play"
     }
 
