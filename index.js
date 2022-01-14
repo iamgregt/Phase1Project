@@ -12,6 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const newsHeader = document.getElementById('newsHeader')
     const team1Header = document.getElementById('newsLogo1')
     const team2Header = document.getElementById('newsLogo2')
+    const newsLogos = document.querySelectorAll('.newsLogo')
+
+    newsLogos.forEach(logo => {
+        logo.hidden = true
+    })
+
     playerScroll.hidden = true
     teamVids.forEach(vid => {
         vid.hidden = true
@@ -62,6 +68,9 @@ for (i = 0; i < coll.length; i++) {
             teamVids.forEach( vid => {
                 vid.hidden = false
             })
+            newsLogos.forEach( logo => {
+                logo.hidden = false
+            })
             
         })
 
@@ -100,17 +109,17 @@ for (i = 0; i < coll.length; i++) {
     //     e.preventDefault()
     // })
 
-    teamSearchForm.addEventListener('submit', e => {
-        let fname = e.target[0].value
-        let lname = e.target[1].value
+    // teamSearchForm.addEventListener('submit', e => {
+    //     let fname = e.target[0].value
+    //     let lname = e.target[1].value
 
-        fetch(`https://www.balldontlie.io/api/v1/players/?search=${fname}_${lname}`)
-        .then(resp => resp.json())
-        .then(data => {
-            console.log(data.data[0])
-        })
-        e.preventDefault()
-    })
+    //     fetch(`https://www.balldontlie.io/api/v1/players/?search=${fname}_${lname}`)
+    //     .then(resp => resp.json())
+    //     .then(data => {
+    //         console.log(data.data[0])
+    //     })
+    //     e.preventDefault()
+    // })
 
 })
 
@@ -145,7 +154,7 @@ function renderTeam(id, teamName, teamAbv){
     .then(data => {
         playerScroll.hidden = false
         const ytPlayer = document.getElementById('iframe1')
-        let ytUrl = "https://www.youtube.com/embed/qEs4T-aErkc?autoplay=1"
+        let ytUrl = "https://www.youtube.com/embed/qEs4T-aErkc"
         ytPlayer.src = ytUrl
         ytPlayer.setAttribute('origin', "http://localhost/")
         ytPlayer.setAttribute('frameborder', '0')
@@ -236,12 +245,45 @@ function removeAllChildNodes(parent) {
 //         })
 //     })
 // })
+let d = 10
+let newMonth = false
 
 function getgame(teamAbv) {
 
+let today = new Date();
+let yyyy = today.getFullYear();
+let dd = (String(today.getDate()).padStart(2, '0')) - d;
+let mm = String(today.getMonth() + 1).padStart(2, '0');
+today = yyyy + mm + (dd - d);
+
+if(newMonth){
+    dd = 30
+    mm = (String(mm - 1).padStart(2,0))
+    newMonth = false
+    console.log('minus before')
+}
+if(mm === "00"){
+    mm = "12"
+    --yyyy
+}
 
 
- fetch('https://data.nba.net/10s/prod/v1/20220110/scoreboard.json')
+
+
+dd= String(dd).padStart(2, '0')
+console.log(dd)
+if(dd === "00"){
+    newMonth = true
+    dd = "30"
+    checkYear(mm)
+}
+
+
+console.log(mm)
+
+console.log(yyyy + mm + dd)
+
+ fetch(`https://data.nba.net/10s/prod/v1/${yyyy}${mm}${dd}/scoreboard.json`)
 .then(resp => resp.json())
 .then(data => {
     let scoreBoard = document.getElementById('score')
@@ -270,10 +312,18 @@ function getgame(teamAbv) {
         scoreBoard.innerHTML = "Did Not Play"
 
     }}catch{
+        let team2Header = document.getElementById('newsLogo2')
         scoreBoard.innerHTML = "Did Not Play"
+        if(team2Header){
+            team2Header.src =""
+            d++
+            getgame(teamAbv)
+            console.log(d)
+            console.log(dd)
+        }
     }
 
-    })
+    }) 
 }
 
 function checkScore(home, away, homeName, awayName, awayId, homeId){
@@ -299,4 +349,10 @@ function getAwayTeam(awayId, homeId){
             }
         })
     }))
+}
+
+function checkYear(mm){
+    if(mm === "00"){
+       return mm = "12"
+    } return mm
 }

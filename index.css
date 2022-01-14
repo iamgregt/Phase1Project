@@ -4,10 +4,10 @@
 html, body {
 	margin: 0;
 	height: 100%;
-	background: #fff;
 	color: #000;
 	padding-top: 0px;
 	padding-left: 4px;
+	background: #fff url(/Users/greg/Pictures/scoreboard.jpeg) center center/cover no-repeat;
 }
 	/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
 	
@@ -213,7 +213,11 @@ div {
 }
 
 #score {
-border: 15px solid;
-border-image: url(/Users/greg/Pictures/scoreboard.jpeg) 30 / 15px / 0px stretch;
 display: block;
+}
+
+#newsLogo {
+	max-width: 100%;
+	max-height: auto;
+	border: none;
 }
