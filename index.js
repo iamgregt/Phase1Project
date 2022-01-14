@@ -247,6 +247,7 @@ function removeAllChildNodes(parent) {
 // })
 let d = 10
 let newMonth = false
+let newYear = false
 
 function getgame(teamAbv) {
 
@@ -261,26 +262,33 @@ if(newMonth){
     mm = (String(mm - 1).padStart(2,0))
     newMonth = false
     console.log('minus before')
+    console.log(mm)
 }
 if(mm === "00"){
     mm = "12"
     --yyyy
 }
 
-
-
-
 dd= String(dd).padStart(2, '0')
 console.log(dd)
 if(dd === "00"){
     newMonth = true
-    dd = "30"
     checkYear(mm)
+    console.log(`"it's ${mm}`)
+    dd = "30"
+    d = 0
 }
+
+if(newYear){
+    mm = "12"
+    newYear = false
+    console.log(newYear)
+}
+console.log(newYear)
 
 
 console.log(mm)
-
+console.log(newMonth)
 console.log(yyyy + mm + dd)
 
  fetch(`https://data.nba.net/10s/prod/v1/${yyyy}${mm}${dd}/scoreboard.json`)
@@ -352,7 +360,8 @@ function getAwayTeam(awayId, homeId){
 }
 
 function checkYear(mm){
-    if(mm === "00"){
-       return mm = "12"
-    } return mm
+    if(mm === "01"){
+        console.log("yearcheck")
+        return newYear = true
+    } return m = "12"
 }
