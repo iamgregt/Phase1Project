@@ -2,12 +2,9 @@
 	box-sizing: border-box;
 }
 html, body {
-	margin: 0;
-	height: 100%;
+	min-height: 100%;
+	background: #fff;
 	color: #000;
-	padding-top: 0px;
-	padding-left: 4px;
-	background: #fff url(/Users/greg/Pictures/scoreboard.jpeg) center center/cover no-repeat;
 }
 	/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
 	
@@ -22,7 +19,7 @@ body, ul, ol, dl {
 }
 article, aside, audio, 
 footer, header, nav, section, video {
-	display: block;
+	display: block; 
 	}
 	
 	/* ensures that older browsers will display HTML5 elements correctly */
@@ -53,6 +50,10 @@ textarea {
  /* changes textarea resizing from "both" (UA default) to vertical only */
  
 table { border-collapse: collapse; }
+tr {
+	border: solid;
+	border-width: 1px 0;
+}
 td {
 	padding: .5rem;
 }
@@ -60,57 +61,7 @@ td {
 	
 img { 
 	border: none;
-	max-width: 10%;
-	animation: fadeIn ease 5s;
-  -webkit-animation: fadeIn ease 5s;
-  -moz-animation: fadeIn ease 5s;
-  -o-animation: fadeIn ease 5s;
-  -ms-animation: fadeIn ease 5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-}
+	max-width: 6.5%;
 }
 	/* removes outlines from linked images (for older browsers and IE), sets up images for responsive design layout */
 	
@@ -184,40 +135,3 @@ strong {
 	overflow: hidden;
 	background-color: #f1f1f1;
   }
-
-iframe {
-	height: 300px;
-	width: auto;
-}
-
-.teamInfo {
-	padding-left: "300";
-}
-#playerScroll {
-	  width: fit-content;
-	  height: fit-content;
-	  margin-top: 5px;
-	  margin-left: 10px;
-  }
-
-.players {
-	font-size: 24px;
-}
-
-div {
-	max-height: 100%;
-}
-
-#newsHeader {
-	display: flex;
-}
-
-#score {
-display: block;
-}
-
-#newsLogo {
-	max-width: 100%;
-	max-height: auto;
-	border: none;
-}

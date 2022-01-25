@@ -9,32 +9,38 @@
     <script src="./index.js"></script>
 </head>
 <body>
+    <form id="teamSearch">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+        <button type="submit" id="searchSubmitbtn">Search Players</button>
+      </form>
+      <span>
+          <h1 id="playerResult">
+          </h1>
+      </span>
+      <table id="resultTable">
+          <tr>
+              <th>Team</th>
+              <th>Position</th>
+              <th>Height</th>
+          </tr>
+          <tr>
+              <td id="Team">Test</td>
+              <td id="Position">Test</td>
+              <td id="Height">Test</td>
+          </tr>
+      </table>
 <div>
     <h2>Choose A Team</h2>
     <div id="teamPics"></div>
 </div>
 <div id="playerObj">
-
-</div>
-<div id="newsHeader">
-<iframe id="iframe1" type="text/html" class="iframe"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-<iframe id="iframe2" type="text/html" class="iframe"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-<select id="playerScroll" size="10"></select>
-<img id="newsLogo1" class="newsLogo">
-<p id="score"></p>
-<img id="newsLogo2" class="newsLogo">
-</div> 
-<div id="teamInfo">
-</div>
-<div>
-    <h1 id="roster">Player Roster</h1>
+    <h1>Player Roster</h1>
     <ol id="playersContainer"></ol>
 </div>
 
-
+    
 </body>
 </html>
